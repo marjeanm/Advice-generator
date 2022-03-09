@@ -7,7 +7,7 @@
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
     <title>Frontend Mentor | Advice generator app</title>
 
 
@@ -16,22 +16,22 @@
 <body>
 
     <div class="contain">
-        <p>Advice <span id="number"></span></p>
+        <p class="neon"> Advice #
+            <span id="digits" class="neon"></span>
+        </p>
         <figure>
-            <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <blockquote cite="https://api.adviceslip.com/">
                 <p id="quote"></p>
             </blockquote>
-
         </figure>
+        <img src="images/pattern-divider-mobile.svg" alt="">
+        <button class="btn"></button>
+        <script src="/js/app.js"></script>
     </div>
 
 
 
 
-    Advice #
-    <!-- Advice ID goes here -->
-
-    "
     <!-- Advice text goes here -->"
 
     <div class="attribution">
