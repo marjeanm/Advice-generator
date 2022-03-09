@@ -23,28 +23,89 @@
 body {
   background-color: hsl(218, 23%, 16%);
   font-family: 'Manrope';
+  font-size: 18px;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
 }
 .contain {
   background-color: hsl(217, 19%, 24%);
-  width: 300px;
-  height: 250px;
   margin: auto;
+  width: 96%;
   border-radius: 7%;
+
+  color: hsl(193, 38%, 86%);
+}
+.quote-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  color: hsl(193, 38%, 86%);
+  justify-content: space-evenly;
+  height: 250px;
+}
+.contain img {
+  width: 90%;
 }
 .neon {
   color: hsl(150, 100%, 66%);
+  margin: 0;
 }
-.quote {
-  background-color: hsl(193, 38%, 86%);
-}
+
 #quote {
   font-weight: 800;
+  margin: 0;
+  text-align: center;
+  width: 295px;
 }
 figure {
   margin: 0;
+}
+.btn {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 25px;
+  padding: 13px;
+  position: relative;
+  top: 33px;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 22;
+  }
+  .contain {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1444px) {
+  body {
+    font-size: 28px;
+  }
+  .contain {
+    width: 25%;
+  }
+
+  .btn:hover {
+    box-shadow: 2px 2px 7px 1px hsl(150, 100%, 66%);
+  }
+  #quote {
+    text-align: center;
+    width: 450px;
+  }
+  .quote-wrapper {
+    height: 382px;
+  }
+  .btn {
+    top: 50px;
+  }
 }
